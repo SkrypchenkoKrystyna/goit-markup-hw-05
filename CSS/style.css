@@ -96,7 +96,22 @@ a {
   font-weight: 500;
 }
 .active-link {
+  position: relative;
+
   color: var(--accent-color);
+}
+
+.active-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .next-link {
@@ -277,6 +292,36 @@ a {
   text-align: center;
 }
 
+.range-image {
+  position: relative;
+}
+
+.range-image::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background-color: #2f303acc;
+}
+
+.range {
+  position: absolute;
+  bottom: 10%;
+  right: 23%;
+}
+
+.range-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  /* text-align: center; */
+}
+
 /* What-are-we-doing */
 
 /* Our-team */
@@ -313,7 +358,7 @@ a {
   text-align: center;
 }
 
-.team-card-content {
+.team-content {
   padding: 30px 0;
   box-shadow: var(--box-shadow-color);
   border-radius: 0px 0px 4px 4px;
@@ -646,6 +691,35 @@ a {
 .card-link {
   display: flex;
   flex-direction: column;
+}
+
+.kriak-up::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.kriak-up {
+  position: relative;
+}
+
+.kriak-position {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.tehnokriak {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.473;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--white-color);
 }
 
 .card-item:hover {
