@@ -388,6 +388,9 @@ a {
 .social-media-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .social-media-list li:not(:last-child) {
   margin-right: 10px;
@@ -811,8 +814,8 @@ a {
 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 3000ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 3000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -820,8 +823,8 @@ a {
 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 3000ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 3000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
